@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Calc.css">
+    <title>Calculator</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="Calculator">
+        <form>
+        <div class="display">
+            <input id="result" type="text" name="display">
+        </div>
+        <div>
+            <input type="button" onclick="Allclear()" value="AC" class="orange">
+            <input type="button"onclick="operator('%')" value="%" class="yellow">
+            <input type="button" onclick="operator('.')"value="."class="yellow">
+            <input type="button" onclick="operator('/')"value="/" class="yellow">
+        </div>
+
+        <div>
+            <input type="button" onclick="displayValue('7')" value="7">
+            <input type="button" onclick="displayValue('8')"value="8">
+            <input type="button" onclick="displayValue('9')"value="9">
+            <input type="button" onclick="operator('*')"value="x" class="yellow">
+        </div>
+
+        <div>
+            <input type="button" onclick="displayValue('4')"value="4">
+            <input type="button"onclick="displayValue('5')" value="5">
+            <input type="button" onclick="displayValue('6')"value="6">
+            <input type="button"onclick="operator('-')" value="-" class="yellow">
+        </div>
+
+        <div>
+            <input type="button" onclick="displayValue('1')"value="1">
+            <input type="button"onclick="displayValue('2')" value="2">
+            <input type="button" onclick="displayValue('3')"value="3">
+            <input type="button" onclick="operator('+')"value="+" class="yellow">
+        </div>
+
+        <div>
+            <input type="button" onclick="DltLast()"value="DE"class="orange">
+            <input type="button" onclick="displayValue('0')"value="0">
+            <input type="button" onclick="evalAnswer()" value="=" class="equal">
+        </div>
+    </form>
+</div>
+    </div>
+</body>
+<!-- link js file -->
+<script src="./cal.js" ></script>
+</html>
